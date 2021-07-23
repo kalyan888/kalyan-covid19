@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+}
+.homepage {
+  background-color: #161625;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* --------------  Header section ---------------- */
+.search-input {
+  color: #fff;
+  background: #2f2f43;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background: #2f2f43;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+.stat-name,
+.stat-count {
+  font-family: Roboto;
+  font-size: 12px;
+}
+.stat-count {
+  font-size: 16px;
+}
+.stat-confirmed,
+.count-confirmed,
+.confirmed-count {
+  color: #ff073a;
+}
+.stat-recovered,
+.count-recovered,
+.active-count {
+  color: #28a745;
+}
+.stat-active,
+.count-active,
+.recovered-count {
+  color: #007bff;
+}
+.stat-deceased,
+.count-deceased,
+.deceased-count {
+  color: #6c757d;
+}
+
+.stat-table-container {
+  max-width: 92%;
+  min-height: 200px;
+  top: 464px;
+  background: #1e1e30;
+  border: 1px solid #475569;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+  padding: 20px;
+  margin: auto;
+  overflow: auto;
+}
+.stat-table {
+  width: 1146px;
+}
+.stat-table-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px 25px 20px;
+}
+.stat-table-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #f8fafc;
+}
+.sorting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sort-icon {
+  margin: 0 0 0 15px;
+  opacity: 0.6;
+}
+.sort-icon:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.table-header-separator {
+  color: #fff;
+  min-width: 100%;
+}
+S .population-count {
+  color: #94a3b8;
+}
+/* --------------  media query for width < 767 ---------------- */
+
+@media screen and (max-width: 767px) {
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat-container {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+  }
+  .stat-container-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-container-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .search-input {
+    height: 50px;
+    width: 70vw;
+    padding-left: 8px;
+    font-size: 14px;
+    word-spacing: 1px;
+  }
+  .state-count {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+  .confirmed-count {
+    text-align: right;
+    margin-left: 40px;
+  }
+  .active-count {
+    text-align: right;
+    margin-right: 40px;
+  }
+  .recovered-count {
+    text-align: right;
+  }
+  .deceased-count {
+    text-align: right;
+  }
+  .population-count {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .state-code-container {
+    display: flex;
+    align-items: center;
+    background: #1cd4d429;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  .state-code {
+    font-family: Roboto;
+    font-size: 10px;
+    color: #facc15;
+    margin-right: 8px;
+  }
+}
+
+/* --------------  media query for width > 768 ---------------- */
+
+@media screen and (min-width: 768px) {
+  .stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stat-container {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+  }
+  .stat-container-1 {
+    display: flex;
+  }
+
+  .stat-container-2 {
+    display: flex;
+  }
+  .search-input {
+    height: 70px;
+    width: 60vw;
+    padding-left: 25px;
+    font-size: 16px;
+    word-spacing: 1px;
+  }
+  .state-count {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .confirmed-count {
+    text-align: right;
+    margin-left: -10px;
+  }
+  .active-count {
+    text-align: right;
+    margin-left: -20px;
+  }
+  .recovered-count {
+    text-align: right;
+  }
+  .deceased-count {
+    text-align: right;
+  }
+  .population-count {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .state-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1cd4d429;
+    padding: 10px 12px;
+    border-radius: 4px;
+    width: 70px;
+    margin-top: 10px;
+  }
+  .state-code {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #facc15;
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,28 @@
+.state-count-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1146px;
+}
+@media screen and (max-width: 767px) {
+  .state-name {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    margin: 10px;
+    text-align: left;
+    width: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .state-name {
+    font-family: Roboto;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin: 10px;
+    text-align: left;
+    width: 140px;
+  }
+}

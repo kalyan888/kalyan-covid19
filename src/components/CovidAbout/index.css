@@ -1,0 +1,107 @@
+@media screen and (max-width: 767px) {
+  .about-container {
+    min-height: 100vh;
+    background: #161625;
+    padding: 20px;
+  }
+  .about-heading {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #f8fafc;
+    text-align: left;
+    margin: 20px 0;
+  }
+  .update-text {
+    font-family: Roboto;
+    font-size: 14px;
+    text-align: left;
+    color: #94a3b8;
+  }
+  .vaccine-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #e2e8f0;
+    width: 300px;
+    margin: 20px 0 40px 0;
+  }
+  .question {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    word-spacing: 1px;
+    text-align: left;
+    color: #94a3b8;
+    width: 350px;
+    margin: 10px 0;
+  }
+  .answer {
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #007bff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    min-height: 100vh;
+    background: #161625;
+    padding: 20px 120px;
+  }
+  .about-heading {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 500;
+    color: #f8fafc;
+    text-align: left;
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+  .update-text {
+    font-family: Roboto;
+    font-size: 15px;
+    text-align: left;
+    color: #94a3b8;
+  }
+  .vaccine-text {
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #e2e8f0;
+    margin: 20px 0 40px 0;
+  }
+  .question {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    word-spacing: 1px;
+    text-align: left;
+    color: #94a3b8;
+    margin: 20px 0;
+  }
+  .answer {
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #007bff;
+  }
+}
