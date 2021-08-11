@@ -24,7 +24,7 @@ class Header extends Component {
 
           <div className="portrait">
             <img
-              className="icon"
+              className="hamburger-icon"
               src="https://res.cloudinary.com/covid-dashboard/image/upload/v1625809670/Covid19/hamburger-icon.png"
               alt="icon"
               onClick={this.onClickDropDown}

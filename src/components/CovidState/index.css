@@ -1,13 +1,6 @@
-.haha {
-  font-family: Roboto;
-  font-size: 17px;
-  color: #94a3b8;
-  margin-top: 80px;
-}
-
 .state-stats-container {
   background-color: #161625;
-  height: 93vh;
+  min-height: 93vh;
   padding: 20px 30px 0 30px;
   display: flex;
   flex-direction: column;
@@ -38,58 +31,75 @@
   margin-top: 12px;
   text-align: right;
 }
-.stat-confirmed,
-.count-confirmed {
+
+/* .each-district-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+} */
+.districts {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: 'Roboto';
+  justify-content: center;
+}
+.districts-heading {
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 500;
   color: #ff073a;
 }
-.stat-recovered,
-.count-recovered {
-  color: #28a745;
+
+.each-state-name-count-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgba(148, 163, 184, 1);
+  width: 100%;
+  display: flex;
+  min-height: 40px;
+  flex-wrap: wrap;
+  align-items: center;
 }
-.stat-active,
-.count-active {
-  color: #007bff;
+
+.each-state-name-count-lists {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 2px;
+  margin-right: 90px;
 }
-.stat-deceased,
-.count-deceased {
-  color: #6c757d;
+
+.each-state-name-count-items {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
 }
-.confirmed-con:hover {
-  background: #331427;
+
+.each-state-count {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
 }
-.active-con:hover {
-  background: #132240;
+
+.each-state-name {
+  font-weight: 500;
+  font-size: 16px;
+  width: 80px;
+  font-style: italic;
+  font-weight: 500;
 }
-.recovered-con:hover {
-  background: #182829;
-}
-.deceased-con:hover {
-  background: #212230;
+.no-report-msg {
+  margin-right: 10px;
+  color: #0ea5e9;
 }
 /* --------------  media query for width < 767 ---------------- */
 
 @media screen and (max-width: 767px) {
-  .stats-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .stat-container {
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px;
-  }
-  .stat-container-1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .stat-container-2 {
-    display: flex;
-    flex-direction: column;
-  }
   .state-header {
     display: flex;
     justify-content: space-between;
@@ -103,64 +113,21 @@
     padding: 10px 20px;
     margin-bottom: 17px;
   }
-  .stat-name,
-  .stat-count {
-    font-family: Roboto;
-    font-size: 13px;
+  .each-state-name-count-container {
+    width: 80%;
   }
-  .stat-count {
-    font-size: 16px;
+  .each-district-count {
+    font-family: 15px;
+    color: rgba(148, 163, 184, 1);
   }
-  .confirmed-con:hover,
-  .active-con:hover,
-  .recovered-con:hover,
-  .deceased-con:hover {
-    height: 125px;
-    width: 125px;
-    padding: 18px;
-    border-radius: 12px;
-    margin: 32px 34px 34px 34px;
-  }
-  .district-stats {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 80vw;
-  }
-  .districts-header {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 300;
-    color: #ff073a;
-  }
-  h3 {
-    font-family: Roboto;
-    font-size: 16px;
-    color: #94a3b8;
+  .each-district-name {
+    font-family: 12px;
+    color: rgba(148, 163, 184, 1);
   }
 }
 /* --------------  media query for width > 768 ---------------- */
 
 @media screen and (min-width: 768px) {
-  .stats-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .stat-container {
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px;
-  }
-  .stat-container-1 {
-    display: flex;
-  }
-  .stat-container-2 {
-    display: flex;
-  }
   .state-header {
     display: flex;
     justify-content: space-between;
@@ -170,40 +137,16 @@
   .state-name-only {
     font-size: 19px;
     height: 48px;
-    width: 210px;
+    min-width: 210px;
     padding: 10px 20px;
     margin-bottom: 25px;
   }
-  .stat-name,
-  .stat-count {
-    font-family: Roboto;
-    font-size: 15px;
+  .each-district-count {
+    font-family: 15px;
+    color: rgba(148, 163, 184, 1);
   }
-  .stat-count {
-    font-size: 19px;
+  .each-district-name {
+    font-family: 13px;
+    color: rgba(148, 163, 184, 1);
   }
-  .stat-container {
-    margin: 80px;
-  }
-  h3 {
-    font-family: Roboto;
-    font-size: 16px;
-    color: #94a3b8;
-  }
-  .confirmed-con:hover,
-  .active-con:hover,
-  .recovered-con:hover,
-  .deceased-con:hover {
-    height: 148px;
-    width: 148px;
-    left: 150px;
-    top: 308px;
-    padding: 14px;
-    border-radius: 12px;
-    margin: 65px 63px 65px 61px;
-  }
-}
-.state-names {
-  color: #fff;
-  font-size: 40px;
 }

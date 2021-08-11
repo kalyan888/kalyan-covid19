@@ -2,9 +2,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1146px;
+}
+.confirmed-count {
+  text-align: right;
+  color: #ff073a;
+}
+.active-count {
+  text-align: right;
+  color: #28a745;
+}
+.recovered-count {
+  text-align: right;
+  color: #007bff;
+}
+.deceased-count {
+  text-align: right;
+  color: #6c757d;
+}
+.population-count {
+  text-align: right;
+  color: #94a3b8;
 }
 @media screen and (max-width: 767px) {
+  .state-count-con {
+    width: 1140px;
+  }
   .state-name {
     font-family: Roboto;
     font-size: 16px;
@@ -12,17 +34,54 @@
     font-weight: 400;
     margin: 10px;
     text-align: left;
-    width: 120px;
+    width: 150px;
+  }
+  .state-count {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 20px;
+  }
+  .confirmed-count {
+    margin-left: 8px;
+  }
+  .active-count {
+    margin-left: 12px;
+  }
+  .recovered-count {
+    margin-left: 20px;
+  }
+  .population-count {
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 768px) {
+  .state-count-con {
+    width: 1000px;
+  }
   .state-name {
     font-family: Roboto;
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
     font-weight: 400;
     margin: 10px;
     text-align: left;
     width: 140px;
+  }
+  .state-count {
+    font-family: Roboto;
+    font-size: 10px;
+  }
+  .confirmed-count {
+    margin-left: -15px;
+  }
+  .active-count {
+    margin-left: -15px;
+  }
+  .deceased-count {
+    margin-left: 10px;
+  }
+  .population-count {
+    margin-right: 20px;
   }
 }
