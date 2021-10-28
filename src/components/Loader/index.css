@@ -1,4 +1,16 @@
-.loader-component {
-  margin-top: 50%;
-  margin-left: 50%;
+@media screen and (max-width: 767px) {
+  .loader-component {
+    position: absolute;
+    top: 40%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .loader-component {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
 }
