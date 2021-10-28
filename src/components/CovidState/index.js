@@ -169,7 +169,7 @@ class CovidState extends Component {
     const {match} = this.props
     const {params} = match
     const {id} = params
-    const dataUrl = 'https://api.covid19india.org/v4/min/data.min.json'
+    const dataUrl = 'https://data.covid19india.org/v4/min/data.min.json'
     const response = await fetch(dataUrl)
     const jsonData = await response.json()
     this.updateState(id, jsonData)
@@ -229,7 +229,6 @@ class CovidState extends Component {
       }))
     }
     const result = nameAndData
-    console.log(districts)
     result.sort((a, b) => b.eachData - a.eachData)
 
     return result
@@ -303,7 +302,11 @@ class CovidState extends Component {
               </div>
             </div>
 
-            <DailyAndCumulativeGraphs stateData={stateData} />
+            <DailyAndCumulativeGraphs
+              stateData={stateData}
+              stateCode={stateCode}
+              key={stateCode}
+            />
 
             <Footer />
           </div>
