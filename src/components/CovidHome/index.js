@@ -13,7 +13,6 @@ class CovidHome extends Component {
     covidData: {},
     isSortedByStates: true,
     isLoading: true,
-    // statesName: [],
   }
 
   componentDidMount() {
@@ -21,7 +20,7 @@ class CovidHome extends Component {
   }
 
   getData = async () => {
-    const dataUrl = 'https://api.covid19india.org/v4/min/data.min.json'
+    const dataUrl = 'https://data.covid19india.org/v4/min/data.min.json'
     const response = await fetch(dataUrl)
     const jsonData = await response.json()
     const sequenceData = this.getSumOfTotalData(jsonData)
@@ -73,9 +72,7 @@ class CovidHome extends Component {
       covidData,
       isSortedByStates,
       isLoading,
-      //   statesName,
     } = this.state
-    // const stateNames = statesName.filter(each => each !== 'TT')
 
     const searchResults = statesList.filter(eachState =>
       eachState.state_name.toLowerCase().startsWith(searchInput.toLowerCase()),
